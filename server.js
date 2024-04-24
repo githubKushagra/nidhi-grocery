@@ -6,6 +6,8 @@ const session = require('express-session');
 const path = require('path');
 const dotenv = require("dotenv");
 
+const port = process.env.PORT || 2004;
+
 dotenv.config();
 
 app.use(session({
@@ -245,6 +247,6 @@ app.post("/payment", (req, res) => {
 
 
 
-app.listen(2004 , function(err) {
+app.listen(port, function(err) {
     console.log("server is live");
 })
