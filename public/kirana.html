@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/grocery" title="grocery icons">Grocery icons created by Freepik - Flaticon</a> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="header head-part">
+        <div class="container">
+            <div class="row mt-2">
+
+                <div class="col-sm-1 company-logo">
+                    <img src="Index_images/trolley.png" alt="" width="42px" height="42px" class="image">
+                </div>
+                <div class="col-sm-8">
+                    <div class="search-container">
+                        <input type="text" class="form-control" id="search-bar" placeholder="Search for Products...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="col-sm-3 login_button">
+                    <ul id="menu">
+                        <li class="text-center">
+                            <div class="login-btn">
+                                <a href="cart.html"><button type="submit" class="btn add-cart-btn">Cart</button></a>
+                                <button class="btn btn-danger" id="clear-cart-button">CC</button>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="screen-brightness-icon">
+                                <button class="dark-mode-btn" id="brightness-btn">Brightness<i class="fa fa-moon"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mb-3 mt-2" id="navbar-second">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav mr-auto">
+                
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle shop-by-category" data-toggle="dropdown">Shop by Category</a>
+                                    <div class="dropdown-menu">
+                                        <div class="container"><!-- Add container to contain the dropdown -->
+                                            <div class="row">
+                                                <div class="col-5"><!-- Adjusted column size to make 2 columns -->
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="exotic_fruits_vegetables.html">Fruits/Vegetable</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="tea.html">Tea</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="kirana.html">Kirana</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="refined_oil.html">Refined/Oil</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="bakery.html">Bakery</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="exotic_fruits_vegetables.html" class="nav-link">Exotic Fruits & Vegetables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tea.html" class="nav-link">Tea</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="refined_oil.html" class="nav-link">Refined/Oil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="kirana.html" class="nav-link">Kirana</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="payment.html" class="nav-link">Payment Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+    <div class="container section" id="kirana_section2">
+        <div class="row">
+            <div class="col">
+                <i class="fa fa-home"></i>
+                <a href="index.html">Home /</a>
+                <a href="refined_oil.html">Kirana Items</a>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h4 style="color: rgba(0,0,0,0.6);"><strong style="color: rgba(0,0,0,1);">40</strong> Seach for kirana
+                </h4>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h4 style="border-top: 1px dotted rgba(0,0,0,0.5);"></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 section" id="kirana_section3" style="background-color: rgba(240,240,240,1);">
+
+        <div class="row inner-kirana-section3">
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/01_sharbati.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">BB Royal <br><strong>Wheat</strong></p>
+                    <div><strong>₹34</strong><del style="color: rgba(0,0,0,0.6);"> ₹56.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="77" data-price="34" data-name="BB Royal Wheat">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/02_aashirbad.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Aashirvaad <br><strong>Atta</strong></p>
+                    <div><strong>₹340</strong><del style="color: rgba(0,0,0,0.6);"> ₹456.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="78" data-price="340" data-name="Aashirvaad Atta">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/03_gold.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Pillsbury <br><strong>Gold Atta</strong></p>
+                    <div><strong>₹234</strong><del style="color: rgba(0,0,0,0.6);"> ₹356.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="79" data-price="234" data-name="Pillsbury Atta">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/04_fortune.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fortune <br><strong>Chakki Atta</strong></p>
+                    <div><strong>₹44</strong><del style="color: rgba(0,0,0,0.6);"> ₹56.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="80" data-price="44" data-name="Fortune Chakki Atta">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/05_chakki.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Pillsbury <br><strong>Chakki Fresh Atta</strong></p>
+                    <div><strong>₹264</strong><del style="color: rgba(0,0,0,0.6);"> ₹306.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="81" data-price="264" data-name="Pillsbury Chakki Fresh Atta">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/06_royal.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">BB Royal <br><strong>Chakki Atta 5kg</strong></p>
+                    <div><strong>₹160</strong><del style="color: rgba(0,0,0,0.6);"> ₹226.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="82" data-price="160" data-name="BB Royal Chakki Fresh Atta">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/07_royalrice.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">BB Royal <br><strong>Premium Rice 5kg</strong></p>
+                    <div><strong>₹300</strong><del style="color: rgba(0,0,0,0.6);"> ₹400.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="83" data-price="300" data-name="BB Royal Premium Rice">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/08_dawat.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Dawat Rozana <br><strong>Rice 5kg</strong></p>
+                    <div><strong>₹200</strong><del style="color: rgba(0,0,0,0.6);"> ₹220.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="84" data-price="200" data-name="Dawar Rozana Rice">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/09_indiagate.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">India Gate <br><strong>Basmati Rice</strong></p>
+                    <div><strong>₹88</strong><del style="color: rgba(0,0,0,0.6);"> ₹106.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="85" data-price="88" data-name="India Gate Basmati Rice">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/10_jeera.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">India Gate <br><strong>Jeera Rice</strong></p>
+                    <div><strong>₹64</strong><del style="color: rgba(0,0,0,0.6);"> ₹99.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="86" data-price="64" data-name="India Gate Jeera Rice">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/11_fortunerice.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fortune <br><strong>Dawar Basmati Rice</strong></p>
+                    <div><strong>₹70</strong><del style="color: rgba(0,0,0,0.6);"> ₹90.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="87" data-price="70" data-name="Fortune Dawar Basmati Rice">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/12_mogra.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">India Gate <br><strong>Mogra 5kg</strong></p>
+                    <div><strong>₹240</strong><del style="color: rgba(0,0,0,0.6);"> ₹306.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="88" data-price="240" data-name="India Gate Mogra Rice">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/13_daal.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Tata Sampann <br><strong>Arhar Daal 2kg</strong></p>
+                    <div><strong>₹260</strong><del style="color: rgba(0,0,0,0.6);"> ₹326.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="89" data-price="260" data-name="Tata Sampann Arhar Daal">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/14_moong.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Tata Sampann <br><strong>Moong Daal (pack of 2)</strong></p>
+                    <div><strong>₹220</strong><del style="color: rgba(0,0,0,0.6);"> ₹260.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="90" data-price="220" data-name="Tata Sampann Moong Daal">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/15_chana.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">popular <br><strong>Chana Daal</strong></p>
+                    <div><strong>₹90</strong><del style="color: rgba(0,0,0,0.6);"> ₹116.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="91" data-price="90" data-name="popular Chana Daal">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/16_masoor.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Tata Sampann <br><strong>Masoor Daal</strong></p>
+                    <div><strong>₹110</strong><del style="color: rgba(0,0,0,0.6);"> ₹136.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="92" data-price="110" data-name="Tata Sampann Masoor Daal">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/17_urad.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Popular <br><strong>urad Split</strong></p>
+                    <div><strong>₹140</strong><del style="color: rgba(0,0,0,0.6);"> ₹166.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="93" data-price="140" data-name="Popular urad Daal">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/18_moong.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Popular <br><strong>Moong Dhoba Daal</strong></p>
+                    <div><strong>₹140</strong><del style="color: rgba(0,0,0,0.6);"> ₹166.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="94" data-price="140" data-name="popper Moong Daal">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/19_uradblack.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">BB Royal <br><strong>Urad Sabit</strong></p>
+                    <div><strong>₹110</strong><del style="color: rgba(0,0,0,0.6);"> ₹126.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="95" data-price="110" data-name="BB Royal Urad Sabit">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/20_uraddal.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">BB Royal <br><strong>Urad Daal split</strong></p>
+                    <div><strong>₹140</strong><del style="color: rgba(0,0,0,0.6);"> ₹156.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="96" data-price="140" data-name="BB Royal Urad Daal">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/21_surfxl.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Surf Excel <br><strong>Surf (pack of 2)</strong></p>
+                    <div><strong>₹250</strong><del style="color: rgba(0,0,0,0.6);"> ₹276.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="97" data-price="250" data-name="Surf Excel Surf">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/22_areal.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Ariel <br><strong>Liquid Wash 4L</strong></p>
+                    <div><strong>₹440</strong><del style="color: rgba(0,0,0,0.6);"> ₹556.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="98" data-price="440" data-name="Ariel Surf">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/23_areal.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Ariel <br><strong>Surf (pack of 3)</strong></p>
+                    <div><strong>₹330</strong><del style="color: rgba(0,0,0,0.6);"> ₹356.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="99" data-price="330" data-name="Ariel Surf">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/24_wheel.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Wheel <br><strong>Surf 2in1</strong></p>
+                    <div><strong>₹65</strong><del style="color: rgba(0,0,0,0.6);"> ₹96.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="100" data-price="65" data-name="Wheel Surf">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/25_tide.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Tide <br><strong>Double Power 12kg</strong></p>
+                    <div><strong>₹720</strong><del style="color: rgba(0,0,0,0.6);"> ₹856.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="101" data-price="720" data-name="Tide Surf">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/26_rin.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Rin <br><strong>Detergent Power 7kg</strong></p>
+                    <div><strong>₹630</strong><del style="color: rgba(0,0,0,0.6);"> ₹656.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="102" data-price="630" data-name="Rin Detergent Surf">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/27_dove.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Dove <br><strong>Soap (pack of 8)</strong></p>
+                    <div><strong>₹150</strong><del style="color: rgba(0,0,0,0.6);"> ₹176.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="103" data-price="150" data-name="Dove Soap">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/28_pears.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Pears <br><strong>Soap (pack of 8)</strong></p>
+                    <div><strong>₹166</strong><del style="color: rgba(0,0,0,0.6);"> ₹196.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="104" data-price="166" data-name="Pears Soap">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/29_dettol.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Dettol <br><strong>Soap (pack of 8)</strong></p>
+                    <div><strong>₹220</strong><del style="color: rgba(0,0,0,0.6);"> ₹256.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="105" data-price="220" data-name="Dettol Soap">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/30_lux.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Lux <br><strong>Soap (pack of 2)</strong></p>
+                    <div><strong>₹70</strong><del style="color: rgba(0,0,0,0.6);"> ₹90.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="106" data-price="70" data-name="Lux Soap">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/31_lifeboy.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Lifeboy <br><strong>Soap (pack of 3)</strong></p>
+                    <div><strong>₹111</strong><del style="color: rgba(0,0,0,0.6);"> ₹156.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="107" data-price="111" data-name="Lifeboy Soap">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/32_rin.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Rin <br><strong>Soap</strong></p>
+                    <div><strong>₹9</strong><del style="color: rgba(0,0,0,0.6);"> ₹10</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="108" data-price="9" data-name="Rin Soap">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/33_surfxl.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Surf Excel <br><strong>Soap Big Bar</strong></p>
+                    <div><strong>₹114</strong><del style="color: rgba(0,0,0,0.6);"> ₹156.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="109" data-price="114" data-name="Surf Excel Bar">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/34_exo.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Exo <br><strong>Touch & Shine (Bar)</strong></p>
+                    <div><strong>₹55</strong><del style="color: rgba(0,0,0,0.6);"> ₹76.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="110" data-price="55" data-name="Exo Bar">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/35_dove.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Dove <br><strong>Shampoo Bar</strong></p>
+                    <div><strong>₹343</strong><del style="color: rgba(0,0,0,0.6);"> ₹456.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="111" data-price="343" data-name="Dove Shampoo">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/36_sunsilk.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Sunsilk <br><strong>Shampoo Bar</strong></p>
+                    <div><strong>₹299</strong><del style="color: rgba(0,0,0,0.6);"> ₹356.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="112" data-price="299" data-name="Sunsilk Shampoo">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row inner-kirana-section3">
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/37_heads.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Head & Shoulder's <br><strong>Shampoo Bar</strong></p>
+                    <div><strong>₹499</strong><del style="color: rgba(0,0,0,0.6);"> ₹556.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="113" data-price="499" data-name="Head & Shoulder Shampoo">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/38_clinic.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Clinic Plus <br><strong>Shampoo Bar</strong></p>
+                    <div><strong>₹399</strong><del style="color: rgba(0,0,0,0.6);"> ₹456.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="114" data-price="399" data-name="Clinic Plus Shampoo">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/39_smooth.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">TREESemme <br><strong>Shampoo Bar</strong></p>
+                    <div><strong>₹449</strong><del style="color: rgba(0,0,0,0.6);"> ₹556.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="115" data-price="449" data-name="TREESemme Shampoo">Add</button>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-3">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="Kirana_images/40_panteen.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Panteen <br><strong>Shampoo Bar</strong></p>
+                    <div><strong>₹499</strong><del style="color: rgba(0,0,0,0.6);"> ₹506.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="116" data-price="499" data-name="Panteen Shampoo">Add</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+
+
+
+
+
+   
+     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+     <div id="footer-sidebar" class="p-sm-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="footer-heading">About Company</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ab mollitia architecto placeat, repellendus vitae consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sit.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">GROUP COMPANIES</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Myntra</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Flipkart Wholesale</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">ClearTrip</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Shopsy</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Amazon India</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Big Basket</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">Company Address</h4>
+                            <address>
+                                <b>Badaun, Inc.</b>
+                                555 Bilsi road, Bisauli <br>
+                                UttarPradesh, India 243720<br>
+                                p : 91+ 8534855208 <br>
+                                Mail Us : devkussu43@gmail.com
+                            </address>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    copyright@2024 The Nidhi Traders
+                </div>
+                <div class="col-md-6">
+                    <!-- for social icons we have to make unordered list then we can apply float right property to it -->
+                    <ul id="social-icons" class="float-md-right">
+                        <li><a href="https://www.facebook.com/profile.php?id=100088248984141" class="fa fa-facebook-square"></a></li>
+                        <li><a href="https://www.linkedin.com/in/kushagra-varshney-235516252/" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://twitter.com/Kushagra_141104" class="fa fa-twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+
+
+
+
+    <script src="../script.js"></script>
+    <script src="../server.js"></script>
+
+</body>
+
+</html>

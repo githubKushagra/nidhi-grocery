@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Items Website</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/grocery" title="grocery icons">Grocery icons created by Freepik - Flaticon</a> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body id="body">
+
+    
+     
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="header head-part fixed-top">
+        <div class="container">
+            <div class="row mt-2">
+
+                <div class="col-sm-1 company-logo">
+                    <img src="Index_images/trolley.png" alt="" width="42px" height="42px" class="image">
+                </div>
+                <div class="col-sm-8">
+                    <div class="search-container">
+                        <input type="text" class="form-control" id="search-bar" placeholder="Search for Products...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="col-sm-3 login_button">
+                    <ul id="menu">
+                        <li class="text-center">
+                            <div class="login-btn">
+                                <a href="cart.html"><button type="submit" class="btn add-cart-btn">Cart</button></a>
+                                <button class="btn btn-danger" id="clear-cart-button">CC</button>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="screen-brightness-icon">
+                                <button class="dark-mode-btn" id="brightness-btn">Brightness<i class="fa fa-moon"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mb-3 mt-2" id="navbar-second">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav mr-auto">
+                
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle shop-by-category" data-toggle="dropdown">Shop by Category</a>
+                                    <div class="dropdown-menu">
+                                        <div class="container"><!-- Add container to contain the dropdown -->
+                                            <div class="row">
+                                                <div class="col-5"><!-- Adjusted column size to make 2 columns -->
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="exotic_fruits_vegetables.html">Fruits/Vegetable</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="tea.html">Tea</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="kirana.html">Kirana</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="refined_oil.html">Refined/Oil</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="bakery.html">Bakery</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="exotic_fruits_vegetables.html" class="nav-link">Exotic Fruits & Vegetables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tea.html" class="nav-link">Tea</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="refined_oil.html" class="nav-link">Refined/Oil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="kirana.html" class="nav-link">Kirana</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="payment.html" class="nav-link" id="go-to-payment-page">Payment Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - not in use, only used for space - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="container rough-text">
+        <div class="row">
+            <div class="col-12">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eaque, facere tempor
+            </div>
+        </div>
+    </div>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - not in use, only used for space - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    
+        <div class="container section" id = "section2">
+            <div class="row section_2">
+                <div class="carousel slide carousel-fade" data-ride="carousel" id="myslider">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myslider" data-slide-to="0" active style="background-color: black;"></li>
+                        <li data-target="#myslider" data-slide-to="1" style="background-color: black;">1</li>
+                        <li data-target="#myslider" data-slide-to="2" style="background-color: black;">2</li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="tea.html"><img src="Index_images/img.webp" alt="" class="img-fluid rounded slider1-img"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="kirana.html"><img src="Index_images/surf.webp" alt="" class="img-fluid rounded slider1-img"></a> 
+                        </div>
+                        <div class="carousel-item">
+                            <a href="kirana.html"><img src="Index_images/shampoo.webp" alt="" class="img-fluid rounded slider1-img"></a>
+                        </div>
+                    </div>
+                    <a href="#myslider" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myslider" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <div class="container section" id = "section3">
+        <div class="row  deals-buttons">
+            <div class="col-sm-2 col-4">
+                <button class="btn">
+                    <img src="Index_images/eggs_meat_img.webp" alt="" class="img-fluid deals-img">
+                </button>
+            </div>
+            <div class="col-sm-2 col-4">
+                <button class="btn">
+                    <img src="Index_images/neupass.webp" alt="" class="img-fluid deals-img">
+                </button>
+            </div>
+            <div class="col-sm-2 col-4">
+                <button class="btn">
+                    <img src="Index_images/ayurveda.webp" alt="" class="img-fluid deals-img">
+                </button>
+            </div>
+            <div class="col-sm-2 col-4">
+                <button class="btn">
+                    <img src="Index_images/buymore_savemore.webp" alt="" class="img-fluid deals-img">
+                </button>
+            </div>
+            <div class="col-sm-2 col-4">
+                <button class="btn">
+                    <a href="deals.html"><img src="Index_images/dealOfTheWeek.webp" alt="" class="img-fluid deals-img"></a>
+                </button>
+            </div>
+            <div class="col-sm-2 col-4">
+                <button class="btn">
+                    <a href="kirana.html"><img src="Index_images/combostore.webp" alt="" class="img-fluid deals-img"></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="container my-5 section" id="section4" style="background-color: #34495e;">
+        <div class="row p-3">
+            <h3 id="my-smart-basket">My Smart Basket</h3>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="carousel slide carousel-fade" data-ride="carousel" id="myslider2">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myslider2" data-slide-to="0" active style="background-color: black;"></li>
+                        <li data-target="#myslider2" data-slide-to="1" style="background-color: black;"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/banana.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-5">Fresho <br><strong>Banana - Robusta</strong></p>
+                                        <div><strong>₹34</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="1" data-price="34" data-name="Banana">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/chilli.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-4" id="p">Fresho <br><strong>Chilli - Green Long, Medium
+                                                (Loose)</strong></p>
+                                        <div><strong>₹50</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="2" data-price="50" data-name="Chilli">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/coriander_dhaniya.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-5">Fresho <br><strong>Coriander Leaves</strong></p>
+                                        <div><strong>₹210</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="3" data-price="210" data-name="Coriander Leaves">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/cucumber.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-5">Fresho <br><strong>Cucumber</strong></p>
+                                        <div><strong>₹490</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="4" data-price="490" data-name="Cucumber">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/garlic.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-5">Fresho <br><strong>Garlic (Loose)</strong></p>
+                                        <div><strong>₹345</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="5" data-price="345" data-name="Garlic">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/ginger.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-5">Fresho <br><strong>Ginger (Loose)</strong></p>
+                                        <div><strong>₹170</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="6" data-price="170" data-name="Ginger">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/lemon.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-5">Fresho <br><strong>Lemon (Loose)</strong></p>
+                                        <div><strong>₹260</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="7" data-price="260" data-name="Lemon">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/onion.webp" alt="" class="img-fluid mt-2 mb-4 smart-basket-img">
+                                        </div>
+                                        <p class="mt-2 mb-5">Fresho <br><strong>Onion</strong></p>
+                                        <div><strong>₹165</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="8" data-price="165" data-name="Onion">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#myslider2" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myslider2" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 5 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="container section" id="section5" style="background-color: #F7F7F7;">
+        <div class="row p-3">
+            <h3 id="bank-offer">Bank Offers</h3>
+        </div>
+        <div class="row section5-row-styling">
+            <div class="col-6 col-sm-4 section5-col">
+                <img src="Index_images/ICICI_bank.webp" alt="" class="img-fluid rounded bank-offer-img">
+            </div>
+            <div class="col-6 col-sm-4 section5-col">
+                <img src="Index_images/American_express_bank.webp" alt="" class="img-fluid rounded bank-offer-img">
+            </div>
+            <div class="col-6 col-sm-4 section5-col">
+                <img src="Index_images/IndusInd_bank.webp" alt="" class="img-fluid rounded bank-offer-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 5 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="container mt-5 section" id="section6" style="background-color: #34495e;">
+        <div class="row p-3">
+            <h3 id="best-seller">Best Sellers</h3>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="carousel slide carousel-fade" data-ride="carousel" id="myslider3">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myslider3" data-slide-to="0" active style="background-color: black;"></li>
+                        <li data-target="#myslider3" data-slide-to="1" style="background-color: black;"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/multipack_pampers.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-5">Littles <br><strong>Baby Wipes - With Aloe Vera, Jojoba Oil & Vitamin E</strong></p>
+                                        <div><strong>₹213</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="9" data-price="213" data-name="Baby Wipes">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/baby_pampers.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-4" id="p">Littles <br><strong>Baby Wipes - With Aloe, Sea Breeze, No Paraben, Moisturising</strong></p>
+                                        <div><strong>₹348</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="10" data-price="348" data-name="Baby Wipes">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/baby_pampers2.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-5">Bigbaskets <br><strong>Baby Wipes - Sea Breeze, No Paraben, Double Moisturising</strong></p>
+                                        <div><strong>₹105</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="11" data-price="105" data-name="Baby Wipes">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/baby_pampers3.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-5">Bigbaskets <br><strong>Baby Wipes - Fresh, No Paraben, Double Moisturizing</strong></p>
+                                        <div><strong>₹315</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="12" data-price="315" data-name="Baby Wipes">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/multipack2.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-5">Littles <br><strong>Baby Diaper Pants - XL, With Wetness Indicator & 12 Hours</strong></p>
+                                        <div><strong>₹558</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="13" data-price="558" data-name="Baby Diaper">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/multipack3.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-5">Bigbaskets <br><strong>Baby Wipes - Cherry Blossom, No Paraben,cMoisturizing</strong></p>
+                                        <div><strong>₹210</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="14" data-price="210" data-name="Baby Wipes">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/littlebaby.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-5">Littles <br><strong>Baby Wipes With Lid - Added With Aloe Vera, Jojoba Oil</strong></p>
+                                        <div><strong>₹86</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="15" data-price="86" data-name="Baby Wipes with Lid">Add</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="img-slider-container p-2" style="background-color: #FFF;">
+                                        <div class="img-inside-slider" style="background-color: #FFF;">
+                                            <img src="Index_images/niinepampers.webp" alt="" class="img-fluid mt-2 mb-4">
+                                        </div>
+                                        <p class="mt-2 mb-5">Niine <br><strong>Niine Baby Wipes - Cottony Soft, Enriched With Aloe Vera</strong></p>
+                                        <div><strong>₹183</strong></div>
+                                        <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="16" data-price="183" data-name="Niine baby Wipes">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#myslider3" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myslider3" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 7 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="container section" id = "section7"  style="background-color: #F7F7F7;">
+        <div class="row section_2">
+            <div class="carousel slide carousel-fade" data-ride="carousel" id="myslider4">
+                <ol class="carousel-indicators">
+                    <li data-target="#myslider4" data-slide-to="0" active style="background-color: black;"></li>
+                    <li data-target="#myslider4" data-slide-to="1" style="background-color: black;"></li>
+                    <li data-target="#myslider4" data-slide-to="2" style="background-color: black;"></li>
+                    <li data-target="#myslider4" data-slide-to="3" style="background-color: black;"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href=""><img src="Index_images/protein.webp" alt="" class="img-fluid rounded"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="bakery.html"><img src="Index_images/tea_bakes.webp" alt="" class="img-fluid rounded"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href=""><img src="Index_images/pedigree.webp" alt="" class="img-fluid rounded"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href=""><img src="Index_images/gentle_pampers.webp" alt="" class="img-fluid rounded"></a>
+                    </div>
+                </div>
+                <a href="#myslider4" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#myslider4" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 7 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 8 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="container section" id="section8"  style="background-color: #F7F7F7;">
+        <div class="row">
+            <div class="col">
+                <h6>The Nidhi Traders - online grocery store</h6>
+                <p style="text-align: justify;">
+                    Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains, dairy products, and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery store, continues to bring a staggering array of over 40,000 products from more than 1,000 brands to the doorsteps of over 10 million satisfied customers. From essential household cleaning products to the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs.<br><br>
+In these times, we've eliminated the stress associated with shopping for daily essentials. You can now effortlessly order all your household products and groceries online. Plus, the added convenience of finding all your requirements at a single source, coupled with substantial savings, demonstrates that bigbasket, India's largest online supermarket, has transformed the way we shop for groceries. Online grocery shopping has become second nature. And when it comes to freshness, whether it's fruits and vegetables or dairy and meat, we've got you covered! Easily obtain fresh eggs, meat, fish, and more with just a few clicks.<br><br>
+We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that all your groceries, snacks and branded foods reach you on time.<br><br>
+Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from early morning delivery for early birds to late-night delivery for those on the night shift. bigbasket caters to every schedule.<br><br>
+Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep within 15-30 minutes. Our quick delivery service has revolutionized the way you shop for groceries. Choose from 5000+ grocery essentials. bbnow is available only in select cities.<br><br>
+Whether it's a last-minute dinner party or you simply need something urgently, we've got you covered. This service exemplifies our commitment to providing you with not just the widest range of products but also the fastest and most efficient shopping experience, making bigbasket.com the go-to destination for all your immediate grocery needs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 8 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div id="footer-sidebar" class="p-sm-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="footer-heading">About Company</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ab mollitia architecto placeat, repellendus vitae consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sit.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">GROUP COMPANIES</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Myntra</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Flipkart Wholesale</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">ClearTrip</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Shopsy</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Amazon India</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Big Basket</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">Company Address</h4>
+                            <address>
+                                <b>Badaun, Inc.</b>
+                                555 Bilsi road, Bisauli <br>
+                                UttarPradesh, India 243720<br>
+                                p : 91+ 8534855208 <br>
+                                Mail Us : devkussu43@gmail.com
+                            </address>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    copyright@2024 The Nidhi Traders
+                </div>
+                <div class="col-md-6">
+                    <!-- for social icons we have to make unordered list then we can apply float right property to it -->
+                    <ul id="social-icons" class="float-md-right">
+                        <li><a href="https://www.facebook.com/profile.php?id=100088248984141" class="fa fa-facebook-square"></a></li>
+                        <li><a href="https://www.linkedin.com/in/kushagra-varshney-235516252/" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://twitter.com/Kushagra_141104" class="fa fa-twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 8 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+    <script>
+        // Function to check if the user is logged in
+        function checkLoginStatus() {
+          // Send an AJAX request to the /login-status route
+          fetch("/login-status")
+            .then(response => {
+              // Check if the response is successful
+              if (!response.ok) {
+                // If the response is not successful, throw an error
+                throw new Error("Network response was not ok");
+              }
+              // Return the response as JSON
+              return response.json();
+            })
+            .then(data => {
+              // Check if the user is logged in or not
+              if (!data.loggedIn) {
+                // User is not logged in, redirect to the login page after 6 seconds
+                setTimeout(function() {
+                  window.location.href = "/login.html"; // Replace "/login.html" with the actual URL of your login page
+                }, 6000); // 6000 milliseconds = 6 seconds
+              }
+            })
+            .catch(error => {
+              // Handle any errors that occurred during the request
+              console.error("Error checking login status:", error);
+              // Display a message to the user
+              alert("An error occurred while checking your login status. Please try again later.");
+            });
+        }
+      
+        // Call the checkLoginStatus function
+        checkLoginStatus();
+      </script>
+
+
+    <script src="../script.js"></script>
+    <script src="../server.js"></script>
+
+
+</body>
+
+</html>

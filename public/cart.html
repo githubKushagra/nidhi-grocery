@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/grocery" title="grocery icons">Grocery icons created by Freepik - Flaticon</a> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row cart">
+            <div class="col-sm-6">
+                <div class="cart-company-name">
+                    <i class="fa fa-shopping-bag"></i>
+                    <h2>The Nidhi Traders</h2>
+                </div>
+            </div>
+            <div class="col-sm-2 offset-4">
+                <div class="cart-logo">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-md-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="row">
+            <div class="col offset-6">
+                <h4 style="padding-left: 50px;">Total Amount - <span id="total-amount"></span></h4>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col">
+                <a href="index.html"><button class="add-to-cart-button" id="add-item-button">Home Page</button></a>
+            </div>
+            <div class="col offset-8">
+                <!-- <a href="payment.html"><button class="btn btn-primary" id="place-order" onclick="placeOrder()">Place Order</button></a> -->
+                <button class="btn btn-primary" id="place-order-now">Place Order</button>
+                <script>
+                    document.querySelector("#place-order-now").addEventListener("click", () => {
+                        window.location.href = "/payment.html";
+                        console.log("hello");
+                        console.log("in place order")
+                        let total = 0.0;
+                        console.log("in place order")
+                        alert("hi")
+                        for(let item of cart) {
+                            total += item.price * item.quantity;
+                            console.log(item.price);
+                        }
+                        const pay_amount = document.getElementById('pay-total-amount');
+                        console.log("total " + total);
+                        pay_amount.innerHTML = "";
+                        pay_amount.innerHTML = total;
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let cart = [];
+
+        // Function to initialize the cart from local storage
+        function initializeCart() {
+            const storedCart = localStorage.getItem('cart');
+            cart = storedCart ? JSON.parse(storedCart) : [];
+            updateCart();
+        }
+
+        // Initialize the cart when the page loads
+        initializeCart();
+
+        // Function to update the cart in local storage
+        function updateLocalStorage() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Function to update the cart table
+        function updateCart() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = ''; // Clear previous content
+
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td>${item.price}</td>
+                    <td>${item.quantity}</td>
+                    <td>${item.price * item.quantity}</td>
+                `;
+                cartItemsContainer.appendChild(row);
+
+                // totalAmount += item.price * item.quantity;
+            });
+            // Update total amount display
+            // document.getElementById('total-amount').textContent = totalAmount.toFixed(2); // Assuming 2 decimal places for currency
+        
+        }
+
+        // Function to add an item to the cart
+        function addToCart(item) {
+            let existingItem = cart.find(cartItem => cartItem.id === item.id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push(item);
+            }
+            updateLocalStorage();
+            updateCart();
+        }
+
+        // Function to clear the cart
+        function clearCart() {
+            cart = [];
+            updateLocalStorage();
+            updateCart();
+        }
+
+        // Event listener for clearing the cart
+        document.getElementById('clear-cart-button').addEventListener('click', clearCart);
+
+        // // Simulate adding an item to the cart when the button is clicked
+        // document.getElementById('add-item-button').addEventListener('click', function() {
+        //     let itemId = '123'; // Sample item ID
+        //     let itemName = 'Sample Item'; // Sample item name
+        //     let itemPrice = 10.99; // Sample item price
+        //     let item = { id: itemId, name: itemName, price: itemPrice, quantity: 1 };
+        //     addToCart(item);
+        // });
+        
+    </script>
+
+    <script src="../script.js"></script>
+    <script src="../server.js"></script>
+
+</body>
+</html>
+
+

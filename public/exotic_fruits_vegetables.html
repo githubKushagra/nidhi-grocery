@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/grocery" title="grocery icons">Grocery icons created by Freepik - Flaticon</a> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="header head-part">
+        <div class="container">
+            <div class="row mt-2">
+
+                <div class="col-sm-1 company-logo">
+                    <img src="Index_images/trolley.png" alt="" width="42px" height="42px" class="image">
+                </div>
+                <div class="col-sm-8">
+                    <div class="search-container">
+                        <input type="text" class="form-control" id="search-bar" placeholder="Search for Products...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="col-sm-3 login_button">
+                    <ul id="menu">
+                        <li class="text-center">
+                            <div class="login-btn">
+                                <a href="cart.html"><button type="submit" class="btn add-cart-btn">Cart</button></a>
+                                <button class="btn btn-danger" id="clear-cart-button">CC</button>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="screen-brightness-icon">
+                                <button class="dark-mode-btn" id="brightness-btn">Brightness<i class="fa fa-moon"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mb-3 mt-2" id="navbar-second">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav mr-auto">
+                
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle shop-by-category" data-toggle="dropdown">Shop by Category</a>
+                                    <div class="dropdown-menu">
+                                        <div class="container"><!-- Add container to contain the dropdown -->
+                                            <div class="row">
+                                                <div class="col-5"><!-- Adjusted column size to make 2 columns -->
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="exotic_fruits_vegetables.html">Fruits/Vegetable</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="tea.html">Tea</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="kirana.html">Kirana</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="refined_oil.html">Refined/Oil</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="bakery.html">Bakery</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="exotic_fruits_vegetables.html" class="nav-link">Exotic Fruits & Vegetables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tea.html" class="nav-link">Tea</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="refined_oil.html" class="nav-link">Refined/Oil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="kirana.html" class="nav-link">Kirana</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="payment.html" class="nav-link">Payment Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="container section" id="fruits_section2">
+        <div class="row">
+            <div class="col">
+                <i class="fa fa-home"></i>
+                <a href="index.html">Home /</a>
+                <a href="exotic_fruits_vegetables.html">Exotic Fruits & Vegetables</a>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h4 style="color: rgba(0,0,0,0.6);"><strong style="color: rgba(0,0,0,1);">16</strong> Seach for fruits & vegetables
+                </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h4 style="border-top: 1px dotted rgba(0,0,0,0.5);"></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 section" id="fruits_section3" style="background-color: rgba(240,240,240,1);">
+        <div class="row inner-fruits-section3">
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/strawberry.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Strawberry</strong></p>
+                    <div><strong>₹41</strong><del style="color: rgba(0,0,0,0.6);"> ₹56.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="17" data-price="41" data-name="Strawberry">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/cucumber.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Cucumber - English (Loose)</strong></p>
+                    <div><strong>₹56</strong><del style="color: rgba(0,0,0,0.6);"> ₹106.86</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="18" data-price="56" data-name="Cucumber">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/broccoli.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Broccoli</strong></p>
+                    <div><strong>₹40</strong><del style="color: rgba(0,0,0,0.6);"> ₹54.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="19" data-price="40" data-name="Broccoli">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/mushrooms.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Mushrooms - Button</strong></p>
+                    <div><strong>₹51</strong><del style="color: rgba(0,0,0,0.6);"> ₹78.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="20" data-price="51" data-name="Mushrooms">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-fruits-section3">
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/blueberry.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Blueberry</strong></p>
+                    <div><strong>₹119</strong><del style="color: rgba(0,0,0,0.6);"> ₹232.88</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="21" data-price="119" data-name="blueberry">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/kiwi.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Kiwi - Green</strong></p>
+                    <div><strong>₹92</strong><del style="color: rgba(0,0,0,0.6);"> ₹183.57</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="22" data-price="92" data-name="Kiwi">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/neemleaves.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Neem Leaves - Organically</strong></p>
+                    <div><strong>₹3</strong><del style="color: rgba(0,0,0,0.6);"> ₹5.11</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="23" data-price="3" data-name="Neem Leaves">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/sweetcorn.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Sweet Corn (Loose)</strong></p>
+                    <div><strong>₹26</strong><del style="color: rgba(0,0,0,0.6);"> ₹35.78</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="24" data-price="26" data-name="sweetcorn">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-fruits-section3">
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/dragon.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Dragon Fruit (Loose)</strong></p>
+                    <div><strong>₹68</strong><del style="color: rgba(0,0,0,0.6);"> ₹94.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="25" data-price="68" data-name="dragon Fruit">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/pear.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Pear - Green, Imported</strong></p>
+                    <div><strong>₹237</strong><del style="color: rgba(0,0,0,0.6);"> ₹356.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="26" data-price="237" data-name="Pear">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/avocado.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Avocado - Imported, Medium</strong></p>
+                    <div><strong>₹80</strong><del style="color: rgba(0,0,0,0.6);"> ₹106.86</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="27" data-price="80" data-name="Avocado">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/lettuce.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Lettuce - iceberg</strong></p>
+                    <div><strong>₹44</strong><del style="color: rgba(0,0,0,0.6);"> ₹60.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="28" data-price="44" data-name="Lettuce">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-fruits-section3">
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/grapes.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Grapes - Red Globe</strong></p>
+                    <div><strong>₹334</strong><del style="color: rgba(0,0,0,0.6);"> ₹457.99</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="29" data-price="334" data-name="grapes">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/mint.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Mint - Organically Grown</strong></p>
+                    <div><strong>₹70</strong><del style="color: rgba(0,0,0,0.6);"> ₹95.86</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="30" data-price="70" data-name="Mint">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/capcicum.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Capsicum - Yellow, Organically</strong></p>
+                    <div><strong>₹26</strong><del style="color: rgba(0,0,0,0.6);"> ₹230.56</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="31" data-price="26" data-name="Capsicum">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="fruits_vegetables_images/figs.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Fresho <br><strong>Fresh Figs</strong></p>
+                    <div><strong>₹168</strong><del style="color: rgba(0,0,0,0.6);"> ₹36.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="32" data-price="168" data-name="Figs">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+
+   
+     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+     <div id="footer-sidebar" class="p-sm-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="footer-heading">About Company</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ab mollitia architecto placeat, repellendus vitae consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sit.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">GROUP COMPANIES</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Myntra</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Flipkart Wholesale</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">ClearTrip</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Shopsy</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Amazon India</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Big Basket</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">Company Address</h4>
+                            <address>
+                                <b>Badaun, Inc.</b>
+                                555 Bilsi road, Bisauli <br>
+                                UttarPradesh, India 243720<br>
+                                p : 91+ 8534855208 <br>
+                                Mail Us : devkussu43@gmail.com
+                            </address>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    copyright@2024 The Nidhi Traders
+                </div>
+                <div class="col-md-6">
+                    <!-- for social icons we have to make unordered list then we can apply float right property to it -->
+                    <ul id="social-icons" class="float-md-right">
+                        <li><a href="https://www.facebook.com/profile.php?id=100088248984141" class="fa fa-facebook-square"></a></li>
+                        <li><a href="https://www.linkedin.com/in/kushagra-varshney-235516252/" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://twitter.com/Kushagra_141104" class="fa fa-twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <script src="../script.js"></script>
+    <script src="../server.js"></script>
+
+
+</body>
+</html>

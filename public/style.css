@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap'); 
+
+
+.carousel-control-prev-icon , .carousel-control-next-icon {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+.section {
+    margin: 50px auto;
+}
+
+
+#body {
+    padding-top: 7rem;;
+}
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+.header {
+    border-top: 5px solid rgb(94, 148, 0);
+    /* background-color: #FFFFFF;    */
+    color: #fff;
+    background: #34495e;
+}
+
+.head-part {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.company-logo .image{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+#search-bar {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+
+#menu {
+    list-style: none;    /* remove bullets points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.login-btn button {
+    color: #fff;
+}
+
+.login-btn .add-cart-btn {
+    background-color: #e74d3cf8;
+}
+
+.login-btn {
+    font-size: 0.8px;
+    border-radius: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+}
+
+.login-btn .btn {
+    font-size: 12px;
+}
+
+.login-btn:hover {
+    color: #fff;
+}
+
+.select-location {
+    background-color: #EEEEEE;
+}
+
+.screen-brightness-icon button{
+    background-color: rgb(235, 176, 98);
+}
+
+.screen-brightness-icon button i {
+    margin-left: 5px;
+}
+
+
+
+.shop-by-category {
+    background-color: #5E9400;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#mynavbar ul li .shop-by-category {
+    color: #fff;
+}
+
+#mynavbar ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #222221;
+}
+
+#mynavbar ul li a {
+    list-style: none;
+    color: black;
+}
+
+#mynavbar ul li a:hover {
+    color: green !important;
+}
+
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+.rough-text {
+    visibility: hidden;
+}
+
+
+.section_2{
+    border-radius: 17px;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    box-shadow: 10px 6px 5px 0px rgba(0,0,0,0.2), -5px 6px 5px 0px rgba(0,0,0,0.2); /* Add this line */
+}
+
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+
+
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+.deals-buttons button {
+    border-radius: 10%;
+    width: 130%;
+}
+
+.section .deals-buttons .deals-img {
+    transition: 0.3s;
+}
+
+.section .deals-buttons .deals-img:hover {
+    /* Increase height and width on hover */
+    transform: scale(1.1);
+    /* Optionally, you can adjust other properties like box-shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+
+
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+
+
+
+.img-inside-slider {
+    border: 0.0500rem solid black;
+    border-radius: 5%;
+}
+
+#section4 , #section6{
+    padding-bottom: 60px;
+}
+
+.carousel-inner .img-slider-container {
+    border-radius: 5%;
+}
+
+/* .section #my-smart-basket {
+    font-family: "Amatic SC", sans-serif;
+} */
+
+
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+
+.section .section5-row-styling .bank-offer-img {
+    transition: 0.3s;
+}
+
+.section .section5-row-styling .bank-offer-img:hover {
+    /* Increase height and width on hover */
+    transform: scale(1.1);
+    /* Optionally, you can adjust other properties like box-shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* .section #bank-offer {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 40px;
+} */
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 8 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+#footer-sidebar {
+    color: #fff;
+    background: #34495e;
+}
+
+.footer-heading:after {
+    background: #fff;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 5px;
+}
+
+.footer-widget ul {
+    list-style: none;
+    padding: 0;  /* ul is having padding and margin as default so we have to make it 0 manually */
+    margin: 0;
+}
+
+.footer-widget ul li a{
+    color: #fff;
+}
+
+.footer-widget ul li i {
+    margin-right: 5px;
+}
+
+#footer {
+    color: #fff;
+    background: #2c3e50;
+}
+
+
+#social-icons {
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#social-icons li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#social-icons li a {
+    color: #fff;
+    font-size: 1rem;
+    font-family: FontAwesome;    /* if icons is not showing then use this line and font-size line */
+}
+
+/*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 8 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+
+
+
+
+
+@media screen and (max-width : 1000px) {
+
+    /*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+    .select-location i {
+        font-size: 0.9rem;
+    }
+
+    .select-location {
+        font-size: 12px;
+    }
+
+    .login-btn button {
+        color: #fff;
+    }
+
+    .login-btn {
+        margin-right: 20px;
+        margin-top: 6px;
+    }
+
+    .login-btn .btn{
+        font-size: 0.6rem; 
+
+    }
+
+    .screen-brightness-icon button {
+        font-size: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+}
+
+
+
+
+@media screen and (max-width : 768px) {
+    #footer {
+        text-align: center;
+    }
+
+    #social-icons {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width : 574px) {
+
+    /*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+    .company-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .select-location i {
+        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .select-location {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .login-btn button {
+        color: #fff;
+    }
+
+    .login-button ul li a button {
+        font-size: 0.5rem;
+    }
+
+    .login-btn {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .screen-brightness-icon {
+       margin-top: 10px;
+       border-radius: 10%;
+    }
+    .screen-brightness-icon .dark-mode-btn{
+        font-size : 15px
+    }
+
+    .section5-row-styling .section5-col{
+        margin-bottom: 10px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    #social-icons {
+        margin-top: 10px;
+    }
+
+    /*<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     Exotic fruits and vegetables css     - - - - - - - - - - - - - - - - - */
+
+
+#fruits_section2 a {
+    list-style: none;
+    color: rgba(0,0,0,0.7);
+    margin-left: 5px;
+}
+
+#fruits_section2 a:hover {
+    color: rgba(0,0,0,2);
+    text-decoration: none;
+}
+
+.inner-fruits-section3 .img-slider-container{
+    border-radius: 5%;
+}
+
+/*  - - - - - - - - - - - - - - - - - -     Exotic fruits and vegetables css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     Tea css     - - - - - - - - - - - - - - - - - */
+
+#refined_section2 a {
+    list-style: none;
+    color: rgba(0,0,0,0.7);
+    margin-left: 5px;
+}
+
+#refined_section2 a:hover {
+    color: rgba(0,0,0,2);
+    text-decoration: none;
+}
+
+
+.inner-refined-section3 .img-slider-container{
+    border-radius: 5%;
+}
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     Tea css     - - - - - - - - - - - - - - - - - */
+
+
+/*  - - - - - - - - - - - - - - - - - -     Refined Oil css     - - - - - - - - - - - - - - - - - */
+
+#tea-section2 a{
+    list-style: none;
+    color: rgba(0,0,0,0.7);
+    margin-left: 5px;
+}
+
+#tea-section2 a:hover {
+    color: rgba(0,0,0,2);
+    text-decoration: none;
+}
+
+#tea-inner-section2 {
+    border-radius: 17px;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    box-shadow: 10px 6px 5px 0px rgba(0,0,0,0.2), -5px 6px 5px 0px rgba(0,0,0,0.2); /* Add this line */
+}
+
+.inner-tea-section3 .img-slider-container{
+    border-radius: 5%;
+}
+
+/*  - - - - - - - - - - - - - - - - - -     Refined Oil css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     kirana css     - - - - - - - - - - - - - - - - - */
+
+#kirana_section2 a {
+    list-style: none;
+    color: rgba(0,0,0,0.7);
+    margin-left: 5px;
+}
+
+#kirana_section2 a:hover {
+    color: rgba(0,0,0,2);
+    text-decoration: none;
+}
+
+
+.inner-kirana-section3 .img-slider-container{
+    border-radius: 5%;
+}
+
+/*  - - - - - - - - - - - - - - - - - -     kirana css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     bakery css     - - - - - - - - - - - - - - - - - */
+
+#bakery_section2 a {
+    list-style: none;
+    color: rgba(0,0,0,0.7);
+    margin-left: 5px;
+}
+
+#bakery_section2 a:hover {
+    color: rgba(0,0,0,2);
+    text-decoration: none;
+}
+
+.inner-bakery-section3 .img-slider-container{
+    border-radius: 5%;
+}
+
+/*  - - - - - - - - - - - - - - - - - -     bakery css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     login page css     - - - - - - - - - - - - - - - - - */
+
+.login-text-images {
+    background-color: rgba(30, 30, 30, 0.95);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.login-company-name {
+    color: #e74d3cf8;
+    display: flex;
+    margin: 100px 50px 50px 50px;
+    font-size: 1.5rem;
+}
+
+.login-company-name i {
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.login-join-text {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.login-below-text {
+    margin-left: 50px;
+    font-size: 0.8rem;
+}
+
+.login-list ul li{
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+.fa{
+    margin-right: 10px;
+}
+
+.login-image img{
+    display: relative;
+    float: right;
+    margin: 20px;
+}
+.login-page {
+    background-color: rgba(34, 34, 33, 1);
+    color: #FFFFFF;
+}
+
+.login-page .bg-color {
+    background-color: rgb(240, 105, 51);
+}
+
+.login-page .login-main-page input{
+    margin-top: 5px;
+}
+
+.login-page .login-main-page button {
+    margin-top: 5px;
+}
+
+/*  - - - - - - - - - - - - - - - - - -     login page css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     Deals page css     - - - - - - - - - - - - - - - - - */
+
+
+#deals_section2 a {
+    list-style: none;
+    color: rgba(0,0,0,0.7);
+    margin-left: 5px;
+}
+
+#deals_section2 a:hover {
+    color: rgba(0,0,0,2);
+    text-decoration: none;
+}
+
+.deal-1-image {
+    display: flex;
+}
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     Deals page css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     contact us page css     - - - - - - - - - - - - - - - - - */
+
+
+.contact-us {
+    background-color: rgba(30, 30, 30, 0.95);
+    color: #FFFFFF;
+}
+
+.contact-us-details {
+    background-color: rgba(44, 44, 43, 1);
+    color: #FFFFFF;
+}
+
+.contact-us-details .details {
+    border: 1px solid rgba(50, 50, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.address-icon {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+
+
+.email-icon {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.call-icon {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.opening-icon {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.contact-us-form {
+    background-color: rgba(30, 30, 30, 0.95);
+    color: #FFFFFF;
+}
+
+.contact-us .contact-us-heading {
+    font-family: "Amatic SC", sans-serif;
+}
+
+/*  - - - - - - - - - - - - - - - - - -     contact us page css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - -     cart page css     - - - - - - - - - - - - - - - - - */
+
+.cart {
+    background-color: goldenrod;
+    padding: 10px;
+}
+
+.cart .cart-company-name {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.cart .cart-company-name i {
+    padding-top: 5px;
+    font-size: 2rem;
+}
+
+.cart .cart-logo {
+    font-size: 2rem;
+}
+
+
+/*  - - - - - - - - - - - - - - - - - -     cart page css     - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+/* 
+        Payment page CSS will be there
+*/
+
+.checkout .payment-heading {
+    color: rgba(0,0,0,0.7);
+}
+
+.checkout .for-border {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}

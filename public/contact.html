@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/grocery" title="grocery icons">Grocery icons created by Freepik - Flaticon</a> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #2c3e50;">
+
+    <div class="container contact-us">
+        <div class="row p-5">
+            <div class="col text-center">
+                <H6>CONTACT</H6>
+                <h1 class="contact-us-heading">NEED HELP?<span style="color: rgb(244, 73, 73);">CONTACT US</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contact-google-map">
+                    <div class="mb-3">
+                        <iframe style="border:0; width: 100%; height: 350px;"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div><!-- End Google Maps -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact-us-details">
+        <div class="row p-2 pt-4">
+            <div class="col-sm-6 p-4 details">
+                <div class="address-icon mr-5">
+                    <i class="fa fa-globe"></i>
+                </div>
+                <div class="address">
+                    <h4>Our Address</h4>
+                    <p>Bilsi Road Bisauli,Badaun<br>UttarPradesh</p>
+                </div>
+            </div>
+            <div class="col-sm-6 p-4 details">
+                <div class="email-icon mr-5">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="email">
+                    <h4>Email Us</h4>
+                    <p>varshneykushagra43@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-2 pb-3">
+            <div class="col-sm-6 p-4 details">
+                <div class="call-icon mr-5">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="call">
+                    <h4>Call Us</h4>
+                    <p>tele - 91+ 8534855208</p>
+                </div>
+            </div>
+            <div class="col-sm-6 p-4 details">
+                <div class="opening-icon mr-5">
+                    <i class="fa fa-share-alt"></i>
+                </div>
+                <div class="opening">
+                    <h4>Opening Hours</h4>
+                    <p>Full Time Open Web (24*7 hours)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact-us-form pb-3">
+        <form autocomplete="off" action="contact" method="POST">
+            <div class="row py-4">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" name="contact_user_name" placeholder="Enter Name">
+                </div>
+                <div class="col-sm-6 pb-2">
+                    <input type="email" class="form-control" id="email" name="contact_email" placeholder="Enter Email">
+                </div>
+                <div class="form-group w-100 p-2">
+                    <input type="text" class="form-control" id="subject" name="contact_subject" placeholder="Subject">
+                </div>
+                <div class="form-group w-100 p-2">
+                    <textarea class="form-control" id="message" rows="3" name="contact_message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger d-flex justify-content-center align-items-center mx-auto" id="contact-btn">Send Message</button>
+            </div>
+          </form>
+          <div class="text-right"><i class="fa fa-fighter-jet" style="color: #FFFFFF; font-size: 15px;"></i>go back to <a href="index.html" style="list-style: none; color: #e74d3cf8;">home page</a></div>
+    </div>
+
+
+    <!-- <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            let btn = document.getElementById("contact-btn");
+
+            btn.addEventListener("click", function () {
+                let name = document.getElementById("name").value.trim();
+                let email = document.getElementById("email").value.trim();
+                let sub = document.getElementById("subject").value.trim();
+                let mssge = document.getElementById("message").value.trim();
+
+                if (name === "" || email === "" || sub === "" || mssge === "") {
+                    alert("Some of the fields have not been filled by you! Please fill these first to send the message.");
+                } else {
+                    // alert("Thanks for reaching us! We have successfully sent your message.");
+                    // window.location.href = 'index.html';
+                }
+            });
+        });
+    </script> -->
+
+    <script src="../script.js"></script>
+    <script src="../server.js"></script>
+
+
+</body>
+
+</html>

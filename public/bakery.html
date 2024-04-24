@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- <a href="https://www.flaticon.com/free-icons/grocery" title="grocery icons">Grocery icons created by Freepik - Flaticon</a> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="header head-part">
+        <div class="container">
+            <div class="row mt-2">
+
+                <div class="col-sm-1 company-logo">
+                    <img src="Index_images/trolley.png" alt="" width="42px" height="42px" class="image">
+                </div>
+                <div class="col-sm-8">
+                    <div class="search-container">
+                        <input type="text" class="form-control" id="search-bar" placeholder="Search for Products...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="col-sm-3 login_button">
+                    <ul id="menu">
+                        <li class="text-center">
+                            <div class="login-btn">
+                                <a href="cart.html"><button type="submit" class="btn add-cart-btn">Cart</button></a>
+                                <button class="btn btn-danger" id="clear-cart-button">CC</button>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="screen-brightness-icon">
+                                <button class="dark-mode-btn" id="brightness-btn">Brightness<i class="fa fa-moon"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mb-3 mt-2" id="navbar-second">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav mr-auto">
+                
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle shop-by-category" data-toggle="dropdown">Shop by Category</a>
+                                    <div class="dropdown-menu">
+                                        <div class="container"><!-- Add container to contain the dropdown -->
+                                            <div class="row">
+                                                <div class="col-5"><!-- Adjusted column size to make 2 columns -->
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="exotic_fruits_vegetables.html">Fruits/Vegetable</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="tea.html">Tea</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="kirana.html">Kirana</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="refined_oil.html">Refined/Oil</a>
+                                                    </div>
+                                                    <div class="dropdown-item">
+                                                        <i class="fa fa-bolt"></i>
+                                                        <a href="bakery.html">Bakery</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="exotic_fruits_vegetables.html" class="nav-link">Exotic Fruits & Vegetables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tea.html" class="nav-link">Tea</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="refined_oil.html" class="nav-link">Refined/Oil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="kirana.html" class="nav-link">Kirana</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="payment.html" class="nav-link">Payment Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <div class="container section" id="bakery_section2">
+        <div class="row">
+            <div class="col">
+                <i class="fa fa-home"></i>
+                <a href="index.html">Home /</a>
+                <a href="bakery.html">Bakery</a>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h4 style="color: rgba(0,0,0,0.6);"><strong style="color: rgba(0,0,0,1);">16</strong> Search for Bakery -
+                </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h4 style="border-top: 1px dotted rgba(0,0,0,0.5);"></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 section" id="bakery_section3" style="background-color: rgba(240,240,240,1);">
+        <div class="row inner-bakery-section3">
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/01_bakery.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">BB Popular <br><strong>Bakery Biscuit - Ajwain</strong></p>
+                    <div><strong>₹79</strong><del style="color: rgba(0,0,0,0.6);"> ₹155.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="117" data-price="34" data-name="Bakery Biscuit - Ajwain">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/02_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">BB Popular <br><strong>Bakery Biscuit - Tooti Fruity</strong></p>
+                    <div><strong>₹155</strong><del style="color: rgba(0,0,0,0.6);"> ₹206.16</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="118" data-price="34" data-name="Bakery Biscuit - Tooti Fruity">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/03_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Dream Bake <br><strong>Swiss Roll - Single</strong></p>
+                    <div><strong>₹9</strong><del style="color: rgba(0,0,0,0.6);"> ₹10</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="119" data-price="34" data-name="Swiss Roll - Single">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/04_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Karachi Bakery <br><strong>Osmania Biscuits - Healthy</strong></p>
+                    <div><strong>₹160</strong></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="120" data-price="34" data-name="Osmania Biscuits - Healthy">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-bakery-section3">
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/05_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Betty Crocker <br><strong>Pancake Mix - Original</strong></p>
+                    <div><strong>₹374</strong><del style="color: rgba(0,0,0,0.6);"> ₹415.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="121" data-price="34" data-name="Pancake Mix - Original">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/06_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Hershey's <br><strong>Chocolate Syrup</strong></p>
+                    <div><strong>₹690</strong><del style="color: rgba(0,0,0,0.6);"> ₹715.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="122" data-price="34" data-name="Chocolate Syrup">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/07_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Britannia <br><strong>Marie Gold Biscuit - Crunchy</strong></p>
+                    <div><strong>₹151</strong><del style="color: rgba(0,0,0,0.6);"> ₹215.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="123" data-price="34" data-name="Marie Gold Biscuit">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/08_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Britannia NutriChoice <br><strong>Digestive High Fibre Biscuits,</strong></p>
+                    <div><strong>₹113</strong><del style="color: rgba(0,0,0,0.6);"> ₹130.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="124" data-price="34" data-name="Digestive High Fibre Biscuits">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-bakery-section3">
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/09_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Parle <br><strong>G Gold Biscuits</strong></p>
+                    <div><strong>₹110</strong><del style="color: rgba(0,0,0,0.6);"> ₹140.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="125" data-price="34" data-name="Parle-G">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/10_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Britennia <br><strong>Good Day</strong></p>
+                    <div><strong>₹343</strong><del style="color: rgba(0,0,0,0.6);"> ₹415.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="126" data-price="34" data-name="Good day">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/11_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Sunfeast <br><strong>Dark Fantasy Choco Fills</strong></p>
+                    <div><strong>₹195</strong><del style="color: rgba(0,0,0,0.6);"> ₹315.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="127" data-price="34" data-name="Dark Fantasy Choco Fills">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/12_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Cadbury Oreo <br><strong>Vanilla Flavour Creme Biscuit</strong></p>
+                    <div><strong>₹149</strong><del style="color: rgba(0,0,0,0.6);"> ₹300.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="128" data-price="34" data-name="Oreo Biscuite">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row inner-bakery-section3">
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/13_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Britennia <br><strong>Jim Jam Biscuite</strong></p>
+                    <div><strong>₹59</strong><del style="color: rgba(0,0,0,0.6);"> ₹71.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="129" data-price="34" data-name="Jim Jam Biscuite">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/14_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">Haldiram's <br><strong>Namkeen - Khatta Meetha</strong></p>
+                    <div><strong>₹56</strong><del style="color: rgba(0,0,0,0.6);"> ₹70.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="130" data-price="34" data-name="Namkeen - Khatta Metha">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/15_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">haldiram's <br><strong>Namkeen - Tasty Nuts</strong></p>
+                    <div><strong>₹95</strong><del style="color: rgba(0,0,0,0.6);"> ₹115.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="131" data-price="34" data-name="Namkeen - Tasty Nuts">Add</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-sm-4 my-5">
+                <div class="img-slider-container p-2" style="background-color: #FFF;">
+                    <div class="img-inside-slider" style="background-color: #FFF;">
+                        <img src="bakery_images/16_b.webp" alt="" class="img-fluid mt-2 mb-4">
+                    </div>
+                    <p class="mt-2 mb-5">haldiram's <br><strong>Punjabi Tadka Namkeen</strong></p>
+                    <div><strong>₹48</strong><del style="color: rgba(0,0,0,0.6);"> ₹55.5</del></div>
+                    <button class="btn w-100 text-center btn-danger my-3 add-to-cart-button" data-id="132" data-price="34" data-name="Punjabi Tadka Namkeen">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - section 2 part - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+
+     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+     <div id="footer-sidebar" class="p-sm-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="footer-heading">About Company</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ab mollitia architecto placeat, repellendus vitae consectetur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sit.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">GROUP COMPANIES</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Myntra</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Flipkart Wholesale</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">ClearTrip</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Shopsy</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Amazon India</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    <a href="">Big Basket</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-6 col-md-4">
+                        <div class="footer-widget">
+                            <h4 class="footer-heading">Company Address</h4>
+                            <address>
+                                <b>Badaun, Inc.</b>
+                                555 Bilsi road, Bisauli <br>
+                                UttarPradesh, India 243720<br>
+                                p : 91+ 8534855208 <br>
+                                Mail Us : devkussu43@gmail.com
+                            </address>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    copyright@2024 The Nidhi Traders
+                </div>
+                <div class="col-md-6">
+                    <!-- for social icons we have to make unordered list then we can apply float right property to it -->
+                    <ul id="social-icons" class="float-md-right">
+                        <li><a href="https://www.facebook.com/profile.php?id=100088248984141" class="fa fa-facebook-square"></a></li>
+                        <li><a href="https://www.linkedin.com/in/kushagra-varshney-235516252/" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://twitter.com/Kushagra_141104" class="fa fa-twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+    <script src="../script.js"></script>
+    <script src="../server.js"></script>
+
+
+</body>
+</html>
