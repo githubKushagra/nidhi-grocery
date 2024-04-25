@@ -267,7 +267,7 @@ document.getElementById('place-order-now').addEventListener('click' , () => {
     console.log("in place order")
     let total = 0.0;
     console.log("in place order")
-    alert("hi")
+    // alert("hi")
     for(let item of cart) {
         total += item.price * item.quantity;
         console.log(item.price);
