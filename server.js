@@ -154,7 +154,7 @@ app.post("/login" , (req , res) => {
                                         req.session.loggedIn = true;
                                         req.session.save();
                                         console.log("Successfully signed in")
-                                        res.send(`<script>alert('Successfully signed in'); window.location.href = '/index';</script>`);
+                                        res.send(`<script>alert('Successfully signed in'); window.location.href = '/login';</script>`);
                                         // res.redirect("/index"); // Redirect to the index page if sign-up is successful
                                     })
                                     .catch(err => {
