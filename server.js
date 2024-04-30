@@ -236,7 +236,7 @@ app.post("/payment", (req, res) => {
         .then(doc => {
             console.log(doc);
             console.log("Successfully sent the message and saved into database");
-            res.send(`<script>alert('Successfully done the payment'); window.location.href = '/index';</script>`);
+            res.send(`<script>alert('Successfully done with your order'); window.location.href = '/index';</script>`);
         })
         .catch(err => {
             console.log("An error has occurred in the app.post");
