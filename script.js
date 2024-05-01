@@ -127,6 +127,9 @@ search_bar.addEventListener("keydown" , function(event) {
                 window.location.href = 'bakery.html';
                 break;
             case 'kirana':
+            case 'Wheat':
+            case 'Rice':
+            case '':
                     window.location.href = 'kirana.html';
                 break;
             case 'refined':
