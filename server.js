@@ -185,6 +185,68 @@ app.get("/login-status", (req, res) => {
   });
 
 
+
+
+
+app.post("/contact", (req, res) => {
+    const c_name = req.body.contact_user_name;
+    const c_email = req.body.contact_email;
+    const c_subject = req.body.contact_subject;
+    const c_message = req.body.contact_message;
+
+    // Check if any field is empty
+    if (c_name === "" || c_email === "" || c_subject === "" || c_message === "") {
+        return res.send(`<script>alert('Some of the fields has not been filled by you! Please fill these first to send the message.'); window.location.href = '/contact';</script>`);
+    }
+
+    // If all fields are filled, proceed to save data
+    const data = new contactUser({ name: c_name, email: c_email, subject: c_subject, message: c_message });
+    data.save()
+        .then(doc => {
+            console.log(doc);
+            console.log("Successfully sent the message and saved into database");
+            res.send(`<script>alert('Successfully sent the message'); window.location.href = '/index';</script>`);
+        })
+        .catch(err => {
+            console.log("An error has occurred in the app.post");
+            // Handle the error appropriately, e.g., by sending an error response
+            res.status(500).send("An error occurred while processing your request.");
+        });
+});
+
+
+
+
+app.post("/payment", (req, res) => {
+    const p_fname = req.body.payment_first_name;
+    const p_lname = req.body.payment_last_name;
+    const p_address = req.body.payment_adress;
+    const p_country = req.body.payment_country;
+    const p_city = req.body.payment_city;
+    const p_amount = req.body.payment_amount;
+
+    // Check if any field is empty
+    if (p_fname === "" || p_lname === "" || p_address === "" || p_country === "" || p_city === "" ||p_amount === "") {
+        return res.send(`<script>alert('Some of the fields has not been filled by you! Please fill these first to send the message.'); window.location.href = '/payment';</script>`);
+    }
+
+    // If all fields are filled, proceed to save data
+    const data = new paymentUser({ fname: p_fname, lname: p_lname, address: p_address, country: p_country, city: p_city, pAmount: p_amount});
+    data.save()
+        .then(doc => {
+            console.log(doc);
+            console.log("Successfully sent the message and saved into database");
+            res.send(`<script>alert('Successfully done with your order'); window.location.href = '/index';</script>`);
+        })
+        .catch(err => {
+            console.log("An error has occurred in the app.post");
+            // Handle the error appropriately, e.g., by sending an error response
+            res.status(500).send("An error occurred while processing your request.");
+        });
+});
+
+
+
 app.listen(port, function(err) {
     console.log("server is live");
 })
